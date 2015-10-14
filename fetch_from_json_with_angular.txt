@@ -1,3 +1,46 @@
+<!DOCTYPE html>
+<html ng-app="myItemsApp">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Test</title>
+  
+  <link data-require="bootstrap-css" data-semver="3.1.1" rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" />
+
+  <!-- Le javascript
+    ================================================== -->
+  <script data-require="jquery" data-semver="2.0.3" src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+  <script data-require="bootstrap" data-semver="3.1.1" src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js"></script>
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <div ng-controller=ItemsController>
+    <h3>Test</h3>
+    <div class="row">
+      <div class="col-md-4" ng-repeat="item in itemDetails">
+        <div class="panel panel-default">
+          <ul class="list-group">
+           {{item.name}}
+            <li>{{item.contactPhone}}</li>
+            <li>Address Line 1:{{item.addressLine1}}</li>
+            <li>Address Line 2:{{item.addressLine2}}</li>
+            <li>postalCode:{{item.postalCode}}</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
+
+------------------------
+script.js
+-----------------------------
+
+
 // Add your javascript here
 var myItemsApp = angular.module('myItemsApp', []);
 
@@ -27,3 +70,47 @@ myItemsApp.controller('ItemsController', ['$scope', 'itemsFactory', function($sc
         console.log(data);
     });
 }]);
+
+
+-------------------------------
+mockItems.json
+-------------------------------------------
+
+[
+   {
+      "$id":"1",
+      "name":"Test itemName 1",
+      "themeName":"ASD",
+      "addressLine1":"18 Banksia Street",
+      "addressLine2":null,
+      "suburb":"Heidelberg",
+      "state":"VIC",
+      "postalCode":"3084",
+      "contactPhone":"+61 3 123456",
+      "emailAddress":"qwerty.it@xyz.com"
+   },
+   {
+      "$id":"2",
+      "name":"Test itemName 2",
+      "themeName":"WER",
+      "addressLine1":"11 Riverview Place",
+      "addressLine2":"Metroplex on Gateway",
+      "suburb":"Murarrie",
+      "state":"QLD",
+      "postalCode":"4172",
+      "contactPhone":"1300 73123456",
+      "emailAddress":"asdfg.it@xyz.com"
+   },
+   {
+      "$id":"3",
+      "name":"Test itemName 3",
+      "themeName":"ERT",
+      "addressLine1":"60 Waterloo Road",
+      "addressLine2":null,
+      "suburb":"North Ryde",
+      "state":"NSW",
+      "postalCode":"2113",
+      "contactPhone":"123456",
+      "emailAddress":"zxcvb.it@xyz.com"
+   }
+]
