@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+
+  <head>
+    <script data-require="angular.js@*" data-semver="1.3.0-beta.5" src="https://code.angularjs.org/1.3.0-beta.5/angular.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+
+  <body ng-controller="MyController">
+    
+    <table border="1">
+      <tr ng-repeat="hh in myData">
+        <td><a href="#" ng-Click="findValue(hh.$id);">{{hh.$id}}</a></td>
+        <td>{{hh.name}}</td>
+         <td>{{hh.state}}</td>
+          <td>{{hh.postalCode}}</td>
+           <td>{{hh.contactPhone}}</td>
+      </tr>
+    </table>
+    
+    <h3>Results</h3>
+    <ul>
+      <li ng-repeat="result in results">Serial number: {{result.serial}} | Owner: {{result.owner}}</li>
+    </ul>
+  </body>
+
+</html>
+
+-------------------------------------
+
+
+angular.module('myApp', [])
+.controller('MyController', function($scope){
+  $scope.myData = [
+   {
+      "$id":"1",
+      "name":"Test itemName 1",
+      "themeName":"ASD",
+      "addressLine1":"18 Banksia Street",
+      "addressLine2":null,
+      "suburb":"Heidelberg",
+      "state":"VIC",
+      "postalCode":"3084",
+      "contactPhone":"+61 3 123456",
+      "emailAddress":"qwerty.it@xyz.com"
+   },
+   {
+      "$id":"2",
+      "name":"Test itemName 2",
+      "themeName":"WER",
+      "addressLine1":"11 Riverview Place",
+      "addressLine2":"Metroplex on Gateway",
+      "suburb":"Murarrie",
+      "state":"QLD",
+      "postalCode":"4172",
+      "contactPhone":"1300 73123456",
+      "emailAddress":"asdfg.it@xyz.com"
+   },
+   {
+      "$id":"3",
+      "name":"Test itemName 3",
+      "themeName":"ERT",
+      "addressLine1":"60 Waterloo Road",
+      "addressLine2":null,
+      "suburb":"North Ryde",
+      "state":"NSW",
+      "postalCode":"2113",
+      "contactPhone":"123456",
+      "emailAddress":"zxcvb.it@xyz.com"
+   }
+];
+  $scope.results = [];
+  
+
+  $scope.findValue = function(enteredValue) {   
+    alert(enteredValue);
+    angular.forEach($scope.myData, function(value, key) {
+      if (key === enteredValue) {
+        $scope.results.push({id: key, name: value[0].name});
+      }
+    });
+    
+      angular.forEach($scope.myData, function(value, key)
+{     alert(key)
+    if(key==enteredValue)
+    {
+      alert($scope.myData[enteredValue].name);
+    }  
+});
+    
+    
+    
+    
+    
+  };
+
+  
+  
+});
