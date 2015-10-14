@@ -1,0 +1,29 @@
+// Add your javascript here
+var myItemsApp = angular.module('myItemsApp', []);
+
+myItemsApp.factory('itemsFactory', ['$http', function($http){
+  var itemsFactory ={
+    itemDetails: function() {
+      return $http(
+      {
+        url: "mockItems.json",
+        method: "GET",
+      })
+      .then(function (response) {
+        return response.data;
+        });
+      }
+    };
+    return itemsFactory;
+  
+}]);
+
+
+myItemsApp.controller('ItemsController', ['$scope', 'itemsFactory', function($scope, itemsFactory){
+  var promise = itemsFactory.itemDetails();
+
+    promise.then(function (data) {
+        $scope.itemDetails = data;
+        console.log(data);
+    });
+}]);
