@@ -14,3 +14,5 @@ http://hello-angularjs.appspot.com/angularjs-single-page-app-restful-apis#/
 https://github.com/mcasimir/mobile-angular-ui
 
 https://github.com/draptik/angulardemorestful
+
+http://www.c-sharpcorner.com/UploadFile/cd7c2e/make-ajax-call-and-return-json-using-angularjs925/
