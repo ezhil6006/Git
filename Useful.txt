@@ -7,3 +7,10 @@ http://stackoverflow.com/questions/22484919/passing-parameters-to-ng-clicks-func
 http://jsfiddle.net/relly/ysmg1qkt/
 
 http://blog.backand.com/ng-grid-and-a-simple-rest-api/
+
+
+http://hello-angularjs.appspot.com/angularjs-single-page-app-restful-apis#/
+
+https://github.com/mcasimir/mobile-angular-ui
+
+https://github.com/draptik/angulardemorestful
