@@ -22,3 +22,11 @@ http://blog.sodhanalibrary.com/2015/07/java-restful-web-services-integration.htm
 http://codereview.stackexchange.com/questions/21245/creating-a-simple-login-with-angularjs
 
 http://jsfiddle.net/wenyi/e3nk137y/42/light/
+
+http://bdb-opensource.github.io/simple-grid/demo/index.html
+
+http://binarymuse.github.io/ngInfiniteScroll/demo_basic.html
+
+http://jsfiddle.net/benfosterdev/UWLFJ/
+
+http://plnkr.co/edit/kYzezB?p=preview  ==================> Angular formly
