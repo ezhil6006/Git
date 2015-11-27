@@ -30,3 +30,5 @@ http://binarymuse.github.io/ngInfiniteScroll/demo_basic.html
 http://jsfiddle.net/benfosterdev/UWLFJ/
 
 http://plnkr.co/edit/kYzezB?p=preview  ==================> Angular formly
+
+http://codepen.io/andrewmcgivery/pen/emEOQy ==============> infinite Scroll using IONIC
