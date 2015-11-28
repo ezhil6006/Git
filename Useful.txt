@@ -32,3 +32,7 @@ http://jsfiddle.net/benfosterdev/UWLFJ/
 http://plnkr.co/edit/kYzezB?p=preview  ==================> Angular formly
 
 http://codepen.io/andrewmcgivery/pen/emEOQy ==============> infinite Scroll using IONIC
+
+http://bootsnipp.com/snippets/featured/advanced-dropdown-search
+
+http://tutorialzine.com/2013/07/50-must-have-plugins-for-extending-twitter-bootstrap/
