@@ -40,3 +40,5 @@ http://tutorialzine.com/2013/07/50-must-have-plugins-for-extending-twitter-boots
 http://plnkr.co/edit/DbBp60AgfbmGpgvwtnpU?p=preview
 
 http://stackoverflow.com/questions/20131882/add-new-data-from-restful-api-to-angularjs-scope
+
+http://plnkr.co/edit/FBaxdekW1Ya04S7jfz0V?p=preview
