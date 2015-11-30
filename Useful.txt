@@ -38,3 +38,5 @@ http://bootsnipp.com/snippets/featured/advanced-dropdown-search
 http://tutorialzine.com/2013/07/50-must-have-plugins-for-extending-twitter-bootstrap/
 
 http://plnkr.co/edit/DbBp60AgfbmGpgvwtnpU?p=preview
+
+http://stackoverflow.com/questions/20131882/add-new-data-from-restful-api-to-angularjs-scope
