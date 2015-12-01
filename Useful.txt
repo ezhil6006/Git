@@ -45,3 +45,5 @@ http://plnkr.co/edit/FBaxdekW1Ya04S7jfz0V?p=preview
 http://codepen.io/ScottGullen/pen/BqrIy   =================> Chart
 
 http://jsfiddle.net/vishal1shukla2/NChH9/1/       =========> Chart
+
+http://directiv.es/examples   ===============> AngularJs Examples
